@@ -1,0 +1,64 @@
+/* Reset básico */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #080808;
+    color: #ee0303;
+}
+img{
+
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #FFFF00;
+}
+
+.BOTOES {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;/* Espaçamento entre os botões */
+    align-items: center; /*tamanho do botao*/
+}
+
+
+button {
+    padding: 6px 10px;
+    font-size:1rem;
+    color: #080808;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {/* efeito do botao*/
+    background-color:#c0c0c0; 
+}
+
+footer { /* efeito do botao*/
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #777;
+}
