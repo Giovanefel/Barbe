@@ -10,21 +10,36 @@
 
 
 <body>
-    <img src="imagem/bigode.webp" alt="bigode">
+    <!--<img src="imagem/bigode.webp" alt="bigode">-->
     
         <header>
             <h1>Bem-vindo à Barbearia</h1>
         </header>
 
-<div class="aqui">
-        <main>
-            <section class="BOTOES">
-                <button id="serviço">Serviço </button>
-                <button id="horario">Horário</button>
 
-            </section>
-        </main>
-</div>
+    <form>
+        <label for="data">Escolha uma data:</label>
+        <input type="date" id="data" name="data">
+
+        <div id="horario-container">
+            <label for="horario">Escolha um horário:</label>
+            <input type="time" id="horario" name="horario" min="10:00" max="16:00">
+        </div>
+
+        <input type="submit" value="Enviar">
+    </form>
+       
+
+    <script>
+        const dataInput = document.getElementById('data');
+        const horarioContainer = document.getElementById('horario-container');
+
+        dataInput.addEventListener('change', function() {
+            // Exibe o campo de horário quando a data é selecionada
+            horarioContainer.style.display = 'block';
+        });
+    </script>
+
 
 
 
@@ -34,3 +49,29 @@
     </div>
 </body>
 </html>
+
+
+
+
+<!--
+    <script>
+        const dataInput = document.getElementById('data');
+        const horarioContainer = document.getElementById('horario-container');
+
+        dataInput.addEventListener('change', function() {
+            const selectedDate = new Date(dataInput.value);
+            const dayOfWeek = selectedDate.getUTCDay();
+
+            // Verifica se é domingo (0) ou segunda-feira (1)
+            if (dayOfWeek === 0 || dayOfWeek === 1) {
+                alert('Selecione um dia diferente de domingo ou segunda-feira.');
+                dataInput.value = ''; // Limpa a seleção de data inválida
+                horarioContainer.style.display = 'none'; // Esconde o horário novamente
+            } else {
+                horarioContainer.style.display = 'block'; // Exibe o campo de horário
+            }
+        });
+    </script>
+</body>
+</html>
+-->
