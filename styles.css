@@ -1,52 +1,74 @@
-/* Reset básico */
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    header{   
+    color: rgb(5, 5, 5);
 }
 
-/* Estilos gerais */
-body {
-    width: 100%;
-    height: 100%;
-    font-family: Arial, sans-serif;
-    background-color: #080808;
-    color: #ee0303;
+body{ 
+   align-items: center;
+    background: url(imagem/barbe1.avif) no-repeat;
+    font-size: 150%;
 }
-/*img {
-    width: 100%;
-    height: 300px; /* A altura será determinada pela imagem */ alterar
 
-    form{
-        width: 300px;
-        margin: 200px auto;
-        text-align: center;
-        display: block;
-    }
-input{
+.meio {
+    border: 2px solid silver;
+    backdrop-filter: blur(2px); /* Aplica o desfoque ao fundo */
+    border: 1px solid #ccc;
+    padding: 20px;
+
+    background-color:transparent;
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+ 
+}
+label{
+  
+    margin-top: 50px;
     
-}
+    font-size: 150%;
+     
 
-header {   
-    margin-bottom: 20px;
 }
-
-h1 {
-    font-size: 2rem;
-    color: #FFFF00;
-    text-align: center;
-}
-
 form{
+ 
+ 
+   
+   
+}
+label{ 
+   
+    color:rgb(9, 9, 9);
     text-align: center;
+
+}
+input{
+    margin: 25px;
+    background-color: silver;
+    width: 100px;
+    height:50px;  
+    font-size: 15px; 
+   padding: 0px;
+   border-radius: 10px;
+
 }
 
 
-footer { /* efeito do botao*/
-    margin-top: 30px;
-    font-size: 0.9rem;
-    color: #777;
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
     text-align: center;
+    color: red;
+    margin-top: 200px;
+    
 }
